@@ -1,0 +1,19 @@
+.sidebar{
+    width: 250px;
+    /* background-color: blueviolet; */
+    --bs-link-hover-color :white;
+    --bs-link-color :#838fb9;
+    overflow: hidden;
+    transition: all 0.5s;
+    position: fixed;
+}
+.nav-link:hover{
+    color: var(--bs-link-hover-color);
+}
+.navlink::after{
+    position: absolute;
+}
+.hide{
+    width: 0;
+    padding: 0 !important;
+}
