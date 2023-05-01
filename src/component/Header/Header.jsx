@@ -84,9 +84,9 @@ function Header({ handleSideBar, handle }) {
                             </ul>
                             <div className='col-3  bg-info user-details'>
                                 <div className='d-flex align-items-center'>
-                                    <img className="rounded-circle header-profile-user" src='img/users.jpeg' alt='' />
+                                    <img className="rounded-circle header-profile-user" src={User && `${User.photoURL}`} alt='' />
                                     <span className="text-start ms-xl-2">
-                                        <span className="d-inline-block ms-1 fw-medium user-name-text">user@12</span>
+                                        <span className="d-inline-block ms-1 fw-medium user-name-text">{User && `${User.displayName}`}</span>
                                         <span className="d-block ms-1 fs-12 text-muted user-name-sub-text">Founder</span>
                                     </span>
                                 </div>

@@ -9,9 +9,10 @@ import { useSelector } from 'react-redux';
 
 function DashBoard() {
     const [show, setShow] = useState(false);
-    const { Products,totalPrice  } = useSelector(state => state.productReducer)
+    const { Products, totalPrice  } = useSelector(state => state.productReducer)
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+    
     
     return (
         <>
